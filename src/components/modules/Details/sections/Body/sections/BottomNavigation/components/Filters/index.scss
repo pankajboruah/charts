@@ -1,0 +1,17 @@
+.filters {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 10px;
+	.filters__selector {
+		display: flex;
+		align-items: center;
+	}
+	.filters__buttonGroup {
+		button {
+			background: #afafaf45;
+			border: 1px solid #96969645;
+			min-width: 50px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.otherCharts {
+	display: flex;
+	.otherCharts__chart {
+		height: 70px;
+		width: 200px;
+		display: flex;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}

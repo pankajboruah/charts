@@ -1,0 +1,15 @@
+.details__header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #dcdcdc45;
+	.actions {
+		display: flex;
+		justify-content: space-around;
+		width: 40%;
+		.icon {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

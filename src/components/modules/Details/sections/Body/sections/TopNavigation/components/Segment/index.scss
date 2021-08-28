@@ -1,0 +1,20 @@
+.segment {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #dddddd;
+	.segment__icon {
+		padding: 10px;
+	}
+	.segment__content {
+		.segment__content__title {
+			font-weight: bold;
+		}
+		.segment__content__subtitle {
+			font-size: 12px;
+			color: #807f7f;
+		}
+	}
+}

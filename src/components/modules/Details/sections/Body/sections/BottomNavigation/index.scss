@@ -1,0 +1,17 @@
+.bottomNavigation {
+	.bottomNavigation__tabs {
+		padding-left: 10px;
+		border-bottom: 2px solid #96969645;
+		.bottomNavigation__tab {
+			background: #afafaf45;
+			border: 2px solid #96969645;
+			border-bottom: 0px;
+			border-radius: 4px 4px 0px 0px;
+		}
+	}
+}
+
+.MuiTabs-indicator {
+	background-color: #ffffff !important;
+	height: 0px !important;
+}
