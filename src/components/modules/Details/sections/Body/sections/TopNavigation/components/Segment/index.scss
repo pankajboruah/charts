@@ -1,3 +1,4 @@
+@import "../../../../../../../../../sass/helpers/index.scss";
 .segment {
 	width: 30%;
 	display: flex;
@@ -5,6 +6,15 @@
 	padding: 10px;
 	margin: 10px;
 	border: 1px solid #dddddd;
+	@include if-device(phone) {
+		width: auto;
+		// width: 40%;
+		padding: 0px;
+	}
+	@include if-device(tablet) {
+		width: 40%;
+		padding: 0px;
+	}
 	.segment__icon {
 		padding: 10px;
 	}

@@ -1,10 +1,29 @@
-.otherCharts {
-	display: flex;
-	.otherCharts__chart {
-		height: 70px;
-		width: 200px;
+@import "../../../../../../../../../sass/helpers/index.scss";
+.otherCharts__container {
+	width: 70%;
+	@include if-device(phone) {
+		width: 100%;
+	}
+	@include if-device(tablet) {
+		width: 100%;
+	}
+	.otherCharts__section {
 		display: flex;
-		padding-top: 20px;
-		padding-left: 20px;
+		@include if-device(phone) {
+			flex-direction: column;
+		}
+		@include if-device(tablet) {
+			flex-direction: column;
+		}
+		.otherCharts__section__charts {
+			display: flex;
+			width: 50%;
+			@include if-device(phone) {
+				width: 100%;
+			}
+			@include if-device(tablet) {
+				width: 100%;
+			}
+		}
 	}
 }

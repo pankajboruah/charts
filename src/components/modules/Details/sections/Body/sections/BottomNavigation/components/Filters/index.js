@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -11,13 +13,13 @@ import "./index.scss";
 const useStyles = makeStyles((theme) => ({
 	formControl: {
 		margin: theme.spacing(1),
+		marginLeft: 0,
 		minWidth: 120,
 	},
 }));
 
-const Filters = () => {
+const Filters = ({ occurence, setOccurence }) => {
 	const [filter, setFilter] = useState(0);
-	const [occurence, setOccurence] = useState(1);
 	const classes = useStyles();
 
 	const handleChange = (event) => {
@@ -58,6 +60,11 @@ const Filters = () => {
 			</div>
 		</div>
 	);
+};
+
+Filters.propTypes = {
+	occurence: PropTypes.number,
+	setOccurence: PropTypes.func,
 };
 
 export default Filters;

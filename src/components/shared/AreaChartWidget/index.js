@@ -54,6 +54,7 @@ const AreaChartContainer = ({
 					<Legend
 						verticalAlign="top"
 						height={36}
+						width={100}
 						align="left"
 						wrapperStyle={{
 							marginLeft: showLegendIcon ? 50 : 0,

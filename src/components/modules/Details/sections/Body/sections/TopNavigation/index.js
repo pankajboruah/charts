@@ -13,7 +13,7 @@ const TopNavigation = () => {
 	};
 	return (
 		<div className="TopNavigation">
-			<div style={{ display: "flex", width: "100%" }}>
+			<div className="TopNavigation__navItems">
 				<Segment title="All Users" subtitle="100.00% Users" />
 				<Segment title="All Users" subtitle="100.00% Users" />
 			</div>

@@ -1,3 +1,17 @@
+@import "../../../../../../../../../sass/helpers/index.scss";
+
 .tabpanel {
 	height: 200px;
+	.tabpanel__charts {
+		display: flex;
+		margin-top: 20px;
+		@include if-device(phone) {
+			flex-direction: column;
+			margin-top: 0px;
+		}
+		@include if-device(tablet) {
+			flex-direction: column;
+			margin-top: 0px;
+		}
+	}
 }

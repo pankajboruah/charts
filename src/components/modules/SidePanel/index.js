@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "./sections/search/index.js";
+import Search from "../../shared/search/index.js";
 import Header from "./sections/header/index.js";
 import Reports from "./sections/reports/index.js";
 import Divider from "../../shared/Divider";

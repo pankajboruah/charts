@@ -1,8 +1,13 @@
+@import "../../../../../../../../../sass/helpers/index.scss";
 .filters {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 10px;
+	@include if-device(phone) {
+		flex-direction: column;
+		align-items: start;
+	}
 	.filters__selector {
 		display: flex;
 		align-items: center;

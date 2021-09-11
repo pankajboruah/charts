@@ -1,15 +1,35 @@
+@import "../../../../../sass/helpers/index.scss";
 .details__header {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
 	background-color: #dcdcdc45;
+	@include if-device(phone) {
+		align-items: center;
+	}
+	@include if-device(tablet) {
+		align-items: center;
+	}
 	.actions {
 		display: flex;
 		justify-content: space-around;
 		width: 40%;
-		.icon {
-			display: flex;
-			align-items: center;
+
+		@include if-device(phone) {
+			display: none;
 		}
+		@include if-device(tablet) {
+			display: none;
+		}
+	}
+}
+.icon {
+	display: flex;
+	align-items: center;
+}
+
+.hamburger {
+	@include if-device(desktop) {
+		display: none;
 	}
 }

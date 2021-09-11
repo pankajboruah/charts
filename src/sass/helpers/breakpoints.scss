@@ -1,0 +1,37 @@
+/* stylelint-disable */
+// ====== Media Devices ======
+
+$scu-large-desktop-min-width: 1400px !default;
+$scu-large-desktop-min-height: 800px !default;
+$scu-desktop-min-width: 1280px !default;
+$scu-tablet-min-width: 768px !default;
+$scu-tablet-max-width: 1025px !default;
+$scu-phone-max-width: 767px !default;
+
+@mixin if-device($device) {
+	@if $device == large-desktop {
+		@media only screen and (min-width: $scu-large-desktop-min-width) and (min-height: $scu-large-desktop-min-height) {
+			@content;
+		}
+	} @else if $device == desktop {
+		@media only screen and (min-width: $scu-desktop-min-width) {
+			@content;
+		}
+	} @else if $device == tablet {
+		@media only screen and (min-width: $scu-tablet-min-width) and (max-width: $scu-tablet-max-width) {
+			@content;
+		}
+	} @else if $device == desktop-tablet {
+		@media only screen and (min-width: $scu-tablet-min-width) {
+			@content;
+		}
+	} @else if $device == phone-tablet {
+		@media only screen and (max-width: $scu-tablet-max-width) {
+			@content;
+		}
+	} @else if $device == phone {
+		@media only screen and (max-width: $scu-phone-max-width) {
+			@content;
+		}
+	}
+}

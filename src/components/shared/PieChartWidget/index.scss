@@ -1,4 +1,13 @@
+@import "../../../sass/helpers/index.scss";
+
 .piechart {
 	width: 300px;
 	height: 200px;
+	align-self: center;
+	@include if-device(phone) {
+		margin-top: 15px;
+	}
+	@include if-device(tablet) {
+		margin-top: 15px;
+	}
 }

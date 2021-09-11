@@ -1,7 +1,23 @@
+@import "../../../../../../../sass/helpers/index.scss";
+
 .TopNavigation {
 	// padding: 10px;
 	display: flex;
+	@include if-device(phone) {
+		flex-direction: column-reverse;
+	}
+	.TopNavigation__navItems {
+		display: flex;
+		width: 100%;
+		@include if-device(phone) {
+			flex-direction: column;
+		}
+	}
 	.TopNavigation__date {
 		padding-top: 10px;
+		@include if-device(phone) {
+			padding-right: 10px;
+			align-self: end;
+		}
 	}
 }
